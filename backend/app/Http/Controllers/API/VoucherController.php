@@ -23,7 +23,7 @@ class VoucherController extends Controller
     {
         $exists = Voucher::query()
             ->where('flight_number', $request->flightNumber)
-            ->where('flight_date', $request->daate)
+            ->where('flight_date', $request->date)
             ->exists();
 
         return response()->json([
