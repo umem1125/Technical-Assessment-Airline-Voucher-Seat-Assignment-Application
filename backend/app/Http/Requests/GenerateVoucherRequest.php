@@ -29,7 +29,7 @@ class GenerateVoucherRequest extends FormRequest
             'id' => ['required', 'string'],
             'flightNumber' => ['required', 'string'],
             'date' => ['required', 'date_format:Y-m-d'],
-            'aircraft' => ['required', Rule::in(['ATR', 'Airbus 30', 'Boeing 737 Max'])],
+            'aircraft' => ['required', Rule::in(['ATR', 'Airbus 320', 'Boeing 737 Max'])],
         ];
     }
 
